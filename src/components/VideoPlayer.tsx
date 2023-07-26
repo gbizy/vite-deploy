@@ -8,8 +8,6 @@ interface VideoPlayerProps {
 }
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ url }) => {
-  const [volume] = React.useState<number>(0.5); // Set the initial volume level here
-
   return (
     <div className="video-wrapper">
       <ReactPlayer

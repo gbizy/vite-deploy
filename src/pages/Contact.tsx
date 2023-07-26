@@ -5,9 +5,9 @@ import Navigation from "../components/Navigation";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-  const form = useRef(null);
+  const form = useRef<HTMLInputElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
     emailjs
