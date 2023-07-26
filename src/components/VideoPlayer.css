@@ -1,0 +1,16 @@
+.meme-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-wrapper {
+  max-width: 270px; /* Adjust the max width of each video player */
+  margin: 2px 3px; /* Center the video player horizontally */
+}

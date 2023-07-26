@@ -1,0 +1,48 @@
+/* Work Section */
+#work {
+  background-color: #272932;
+  padding: 80px 0;
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+}
+.text-grid h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+}
+
+.text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3px;
+}
+
+.insta-section,
+.work-section {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .title-text h1 {
+    font-weight: 900;
+    font-size: 50px;
+  }
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insta-section h2 {
+    margin-top: 20px;
+  }
+  .work-section h2 {
+    margin: 20px;
+  }
+}

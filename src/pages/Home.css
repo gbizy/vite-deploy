@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400&display=swap");
+
+body {
+  background: linear-gradient(90deg, #cedbe6 35%, #fff 0%);
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  /* background: linear-gradient(90deg, #cedbe6 35%, #fff 0%); */
+  margin: 0;
+  justify-content: center;
+}
+
+#hero .grid-container {
+  margin-right: 20%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-profile {
+  text-align: center;
+  color: #000000;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: #f4ece6;
+  width: 50%;
+  height: 83%;
+  justify-self: end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-profile h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.grid-profile hr {
+  color: #0050ff;
+  border-color: #0050ff;
+  border-width: 4px;
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.grid-profile p {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.media-container {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 20%;
+}
+
+.media-container img {
+  width: 40px;
+  height: 40px;
+}
+
+.grid-hello {
+  font-size: 24px;
+  color: #000000;
+  text-align: left;
+  width: 600px;
+  padding: 0px;
+  justify-self: left;
+}
+
+.grid-hello h1 {
+  font-size: 100px;
+  font-weight: 900;
+  color: #000000;
+  text-align: left;
+}
+
+.grid-hello h2 {
+  margin-bottom: 30px;
+}
+
+.grid-hello .buttoncontainer {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.grid-hello p {
+  font-size: 16px;
+}
+
+.button1 {
+  border: 1px solid #0050ff;
+  background-color: #0050ff;
+  color: white;
+  border-radius: 22px;
+  padding: 15px 32px;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  margin-right: 20px;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #0050ff;
+}
+
+.button2 {
+  border: 1px solid #000000;
+  background-color: #fff;
+  color: none;
+  border-radius: 22px;
+  padding: 15px 32px;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  margin-bottom: 30px;
+}
+
+.button2:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    background: #cedbe6;
+  }
+
+  #hero .grid-container {
+    grid-template-columns: 1fr;
+    margin-right: 0;
+    justify-items: center;
+    margin: 10% auto;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .grid-profile {
+    width: 100%;
+    height: auto;
+    background: #fff;
+  }
+  #hero .grid-hello {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hero .button1 {
+    margin-right: 0px;
+    width: 56%;
+  }
+  #hero .button2 {
+    width: 56%;
+  }
+
+  .grid-profile hr {
+    margin: 20px auto;
+  }
+
+  .grid-hello h1 {
+    font-size: 60px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .button1,
+  .button2 {
+    margin-bottom: 10px;
+  }
+
+  .grid-hello p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* Adjust the font size and spacing for smaller screens */
+@media screen and (max-width: 480px) {
+  .grid-hello h1 {
+    font-size: 60px;
+  }
+  .grid-hello h2 {
+    margin-bottom: 20px;
+  }
+  .grid-hello p {
+    font-size: 14px;
+  }
+  .grid-profile {
+    height: 85%;
+    background: #f4ece6;
+  }
+
+  .grid-profile h1 {
+    font-size: 24px;
+  }
+  .grid-profile hr {
+    width: 30%;
+  }
+  .grid-profile p {
+    font-size: 18px;
+  }
+}
+
+/* Adjust the profile image size for smaller screens */
+@media screen and (max-width: 320px) {
+  .profile img {
+    width: 150px;
+    height: 150px;
+  }
+}

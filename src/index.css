@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+/* General Styles */
+body {
+  line-height: 1.6;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 40px;
+}

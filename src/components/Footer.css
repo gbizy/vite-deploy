@@ -1,0 +1,28 @@
+/* Footer */
+footer {
+  background-color: #fff;
+  color: #000000;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    position: relative;
+    bottom: auto;
+  }
+}
+
+/* Adjust the font size for smaller screens */
+@media screen and (max-width: 480px) {
+  footer p {
+    font-size: 12px;
+  }
+}
