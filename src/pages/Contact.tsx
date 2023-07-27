@@ -1,7 +1,6 @@
 //import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import Navigation from "../components/Navigation";
 import "./Contact.css";
 
 export default function Contact() {
@@ -34,7 +33,6 @@ export default function Contact() {
   document.body.style.background = "#cedbe6";
   return (
     <>
-      <Navigation />
       <div className="container-contact-page">
         <div className="text-zone">
           <h1>Contact Me</h1>

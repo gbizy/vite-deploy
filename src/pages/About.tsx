@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import "./About.css";
-import Navigation from "../components/Navigation";
 
 export default function About() {
   document.body.style.background =
     "linear-gradient(90deg, #f4ece6 35%, #fff 0%)";
   return (
     <>
-      <Navigation />
       <header id="about">
         <div className="container">
           <div className="text">

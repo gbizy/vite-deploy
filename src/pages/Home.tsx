@@ -1,7 +1,6 @@
 // import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
-import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 function Hero() {
@@ -10,7 +9,6 @@ function Hero() {
     "linear-gradient(90deg, #cedbe6 35%, #fff 0%)";
   return (
     <>
-      <Navigation />
       <header id="hero">
         <div className="grid-container">
           <div className="grid-profile">

@@ -1,13 +1,10 @@
 import "./MyWork.css";
-
-import Navigation from "../components/Navigation";
 import VideoPlayer from "../components/VideoPlayer";
 
 const MyWork: React.FC = () => {
   document.body.style.background = "#cedbe6";
   return (
     <>
-      <Navigation />
       <div className="title-text">
         <h1>My Work</h1>
       </div>
