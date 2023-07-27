@@ -1,32 +1,34 @@
 //import { Link } from "react-router-dom";
-import "./Contact.css";
+import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import Navigation from "../components/Navigation";
-import emailjs from "@emailjs/browser";
+import "./Contact.css";
 
 export default function Contact() {
-  const form = useRef<HTMLInputElement>(null);
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_fw45l3w",
-        "template_f0712kj",
-        form.current,
-        "fFSlDvV0ymJP0Fqft"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Message successfully sent!");
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_fw45l3w",
+          "template_f0712kj",
+          form.current,
+          "fFSlDvV0ymJP0Fqft"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Message successfully sent!");
+            form.current?.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   document.body.style.background = "#cedbe6";
